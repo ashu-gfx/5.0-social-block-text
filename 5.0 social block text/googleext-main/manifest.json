@@ -1,0 +1,28 @@
+{
+    "name": "karma social media blocker",
+    "version": "1.0",
+    "description": "Block social media sites to boost up ur productivity.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.reddit.com/*",
+                "*://*.instagram.com/*",
+                "*://*.facebook.com/*",
+                "*://*.twitter.com/*"
+            ],
+            "css": [
+                "block.css"
+            ],
+            "js": [
+                "block.js"
+            ]
+        }
+    ],
+    "manifest_version": 2,
+    "icons": {
+        "128": "./image.png"
+    }
+}
